@@ -8,8 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component'
 import { WordsComponent } from './words/words.component'
+import { FooterComponent } from './footer/footer.component'
 
-import { RoutingModule } from './routing.module'
+
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { RoutingModule } from './routing.module'
     HeaderComponent,
     AboutComponent,
     BooksComponent,
-    WordsComponent
+    WordsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
