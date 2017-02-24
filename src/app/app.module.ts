@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { AboutComponent } from './about/about.component';
-import { BooksComponent } from './books/books.component'
-import { WordsComponent } from './words/words.component'
 import { FooterComponent } from './footer/footer.component'
+
+import { AboutComponent } from './about/about.component';
+import { BooksComponent } from './books/books.component';
+import { WordsComponent } from './words/words.component';
+import { ReadComponent } from './reader/reader.component';
 
 
 import { RoutingModule } from './routing.module';
@@ -17,10 +19,11 @@ import { RoutingModule } from './routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
     AboutComponent,
     BooksComponent,
     WordsComponent,
-    FooterComponent
+    ReadComponent
   ],
   imports: [
     BrowserModule,
