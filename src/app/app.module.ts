@@ -12,6 +12,7 @@ import { BooksComponent } from './books/books.component';
 import { WordsComponent } from './words/words.component';
 import { ReadComponent } from './reader/reader.component';
 
+import { SplitPipe } from './shared/split.pipe'
 
 import { RoutingModule } from './routing.module';
 
@@ -23,7 +24,8 @@ import { RoutingModule } from './routing.module';
     AboutComponent,
     BooksComponent,
     WordsComponent,
-    ReadComponent
+    ReadComponent,
+    SplitPipe
   ],
   imports: [
     BrowserModule,
