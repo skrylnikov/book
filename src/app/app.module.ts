@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component';
 import { WordsComponent } from './words/words.component';
 import { ReadComponent } from './reader/reader.component';
+import { WordReadComponent } from './reader/word/word.reader.component'
 
 import { SplitPipe } from './shared/split.pipe'
 
@@ -25,6 +26,7 @@ import { RoutingModule } from './routing.module';
     BooksComponent,
     WordsComponent,
     ReadComponent,
+    WordReadComponent,
     SplitPipe
   ],
   imports: [
