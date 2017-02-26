@@ -5,5 +5,6 @@ span{
 sup{
   position: absolute;
   left: 1em;
-  top:0;
+  top:-0.25em;
+  color: #808080;
 }

@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core'
 
+import { TranslateService } from '../../shared/translate.service'
+
 @Component({
   selector:'word',
   templateUrl:'./word.reader.component.html',
@@ -8,13 +10,13 @@ import { Component, Input } from '@angular/core'
 export class WordReadComponent{
   @Input() word:string;
   isTranslate:boolean=false;
-
   wordTranslate:string;
+
+  constructor(private translateService: TranslateService){}
 
   translate(){
     this.isTranslate=true;
-    //TODO add yandex translate
-    this.wordTranslate=this.word;
+    this.translateService.translated(this.word).then(x=>this.wordTranslate=x);
   }
 
 }

@@ -11,7 +11,11 @@ import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component';
 import { WordsComponent } from './words/words.component';
 import { ReadComponent } from './reader/reader.component';
+
+import { ParagraphReaderComponent } from './reader/paragraph/paragraph.reader.component'
 import { WordReadComponent } from './reader/word/word.reader.component'
+
+import { TranslateService} from'./shared/translate.service'
 
 import { SplitPipe } from './shared/split.pipe'
 
@@ -27,6 +31,7 @@ import { RoutingModule } from './routing.module';
     WordsComponent,
     ReadComponent,
     WordReadComponent,
+    ParagraphReaderComponent,
     SplitPipe
   ],
   imports: [
@@ -35,7 +40,7 @@ import { RoutingModule } from './routing.module';
     HttpModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

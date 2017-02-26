@@ -1,3 +1,10 @@
-word{
+p{
+  position: relative;
+  line-height: 1.5;
+}
+p-reader{
+  position: relative;
+}
+div{
   position: relative;
 }
