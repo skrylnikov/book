@@ -16,7 +16,7 @@ export class TranslateService{
   public translated(text: string) {
   return this.http.get(`${this.uri}key=${this.token}&text=${this.remove(text)}&lang=en-ru`)
     .toPromise()
-    .then(x => x = x.json().text[0]);
+    .then(x => x = x.json().text[0].replace(' ','_'));
   }
 
   private remove(text:string):string{
