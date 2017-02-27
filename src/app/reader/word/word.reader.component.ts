@@ -15,8 +15,10 @@ export class WordReadComponent{
   constructor(private translateService: TranslateService){}
 
   translate(){
-    this.isTranslate=true;
-    this.translateService.translated(this.word).then(x=>this.wordTranslate=x);
+    if(!this.isTranslate){
+      this.translateService.translated(this.word).then(x=>this.wordTranslate=x);
+    }
+    this.isTranslate=!this.isTranslate;
   }
 
 }
