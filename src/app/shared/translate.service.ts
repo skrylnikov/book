@@ -14,13 +14,31 @@ export class TranslateService{
   }
 
   public translated(text: string) {
-  return this.http.get(`${this.uri}key=${this.token}&text=${this.remove(text)}&lang=en-ru`)
-    .toPromise()
-    .then(x => x = x.json().text[0].replace(' ','_'));
+    text=this.remove(text);
+    let result=this.cashe(text);
+    if(result==null){
+      let url =`${this.uri}key=${this.token}&text=${text}&lang=en-ru`;
+      return this.http.get(url)
+        .toPromise()
+        .then(x =>x.json().text[0].replace(' ','_'))
+        .then(x=>this.cashe(text, x));
+    }
+    else {
+      return new Promise((resolve)=>resolve(result))
+    }
   }
 
   private remove(text:string):string{
     return text.replace(/['".,?!]/g,'')
+  }
+
+  private cashe(text:string, result?:string){
+    if(result==null){
+      result = localStorage.getItem(text);
+    }else{
+      localStorage.setItem(text,result);
+    }
+    return result;
   }
 
 }
