@@ -20,7 +20,7 @@ export class TranslateService{
       let url =`${this.uri}key=${this.token}&text=${text}&lang=en-ru`;
       return this.http.get(url)
         .toPromise()
-        .then(x =>x.json().text[0].replace(' ','_'))
+        .then(x =>x.json().text[0].replace(/ /g,'_'))
         .then(x=>this.cashe(text, x));
     }
     else {
