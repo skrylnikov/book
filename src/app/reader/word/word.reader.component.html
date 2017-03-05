@@ -1,1 +1,2 @@
-<span (click)="translate()">{{word}}</span><sup *ngIf="isTranslate">{{wordTranslate}}</sup>
+<span (click)="translate()">{{word}}</span><sup *ngIf="isTranslate" (click)="translate()">{{wordTranslate}}</sup>
+<modal *ngIf="isModalDialogVisible" [word]="word" [translates]="wordTranslates" (isConfirmed)="closeModal($event)"></modal>

@@ -14,6 +14,7 @@ import { ReadComponent } from './reader/reader.component';
 
 import { ParagraphReaderComponent } from './reader/paragraph/paragraph.reader.component'
 import { WordReadComponent } from './reader/word/word.reader.component'
+import { ModalComponent } from './reader/word/modal/modal.word.reader.component'
 
 import { TranslateService} from'./shared/translate.service'
 
@@ -32,7 +33,8 @@ import { RoutingModule } from './routing.module';
     ReadComponent,
     WordReadComponent,
     ParagraphReaderComponent,
-    SplitPipe
+    SplitPipe,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
