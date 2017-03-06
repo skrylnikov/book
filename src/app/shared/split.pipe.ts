@@ -1,10 +1,10 @@
-import { Pipe, PipeTransform } from '@angular/core'
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name:'split'
+  name: 'split'
 })
-export class SplitPipe implements PipeTransform{
-  transform(text:string): string[]{
+export class SplitPipe implements PipeTransform {
+  transform(text: string): string[] {
     return text.split(' ');
   }
 }

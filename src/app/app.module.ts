@@ -5,21 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
 
 import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component';
 import { WordsComponent } from './words/words.component';
 import { ReadComponent } from './reader/reader.component';
 
-import { ParagraphReaderComponent } from './reader/paragraph/paragraph.reader.component'
-import { WordReadComponent } from './reader/word/word.reader.component'
-import { ModalComponent } from './reader/word/modal/modal.word.reader.component'
+import { ParagraphReaderComponent } from './reader/paragraph/paragraph.reader.component';
+import { WordReadComponent } from './reader/word/word.reader.component';
+import { ModalComponent } from './reader/word/modal/modal.word.reader.component';
 
-import { TranslateService} from'./shared/translate.service'
-import { InfoService } from'./shared/info.service'
+import { TranslateService } from './shared/translate.service';
+import { InfoService } from './shared/info.service';
 
-import { SplitPipe } from './shared/split.pipe'
+import { SplitPipe } from './shared/split.pipe';
 
 import { RoutingModule } from './routing.module';
 

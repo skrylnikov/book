@@ -1,8 +1,8 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
-  templateUrl:'./words.component.html'
+  templateUrl: './words.component.html'
 })
-export class WordsComponent{
+export class WordsComponent {
 
 }

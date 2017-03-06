@@ -1,14 +1,14 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
-import { InfoService } from'../shared/info.service'
+import { InfoService } from '../shared/info.service';
 
 @Component({
-  templateUrl:'./about.component.html'
+  templateUrl: './about.component.html'
 })
-export class AboutComponent{
-  private version='';
+export class AboutComponent {
+  private version = '';
 
-  constructor(private info: InfoService){
-    this.version=info.version;
+  constructor(private info: InfoService) {
+    this.version = info.version;
   }
 }
