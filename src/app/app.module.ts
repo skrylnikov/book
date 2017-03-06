@@ -17,6 +17,7 @@ import { WordReadComponent } from './reader/word/word.reader.component'
 import { ModalComponent } from './reader/word/modal/modal.word.reader.component'
 
 import { TranslateService} from'./shared/translate.service'
+import { InfoService } from'./shared/info.service'
 
 import { SplitPipe } from './shared/split.pipe'
 
@@ -42,7 +43,7 @@ import { RoutingModule } from './routing.module';
     HttpModule,
     RoutingModule
   ],
-  providers: [TranslateService],
+  providers: [TranslateService, InfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
