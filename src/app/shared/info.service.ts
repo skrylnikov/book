@@ -2,5 +2,5 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class InfoService {
-    public version = '0.1.1';
+  public version = '0.1.2';
 }
