@@ -1,0 +1,9 @@
+D:\dev\js\ng\book\bin\Debug\netcoreapp1.1\book.deps.json
+D:\dev\js\ng\book\bin\Debug\netcoreapp1.1\book.runtimeconfig.json
+D:\dev\js\ng\book\bin\Debug\netcoreapp1.1\book.runtimeconfig.dev.json
+D:\dev\js\ng\book\bin\Debug\netcoreapp1.1\book.dll
+D:\dev\js\ng\book\obj\Debug\netcoreapp1.1\book.csprojResolveAssemblyReference.cache
+D:\dev\js\ng\book\obj\Debug\netcoreapp1.1\book.AssemblyInfo.cs
+D:\dev\js\ng\book\bin\Debug\netcoreapp1.1\book.pdb
+D:\dev\js\ng\book\obj\Debug\netcoreapp1.1\book.dll
+D:\dev\js\ng\book\obj\Debug\netcoreapp1.1\book.pdb
